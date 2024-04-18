@@ -21,7 +21,8 @@
         <x-banner />
 
         @include('layouts.partials.header')
-            <main class="container mx-auto px-5 flex flex-grow">
+        @yield('hero')
+            <main class="container flex flex-grow px-5 mx-auto">
                 {{ $slot }}
             </main>
         @include('layouts.partials.footer')
